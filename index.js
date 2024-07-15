@@ -9,6 +9,16 @@ const app = express();
 //Middleware - Plugin
 app.use(express.urlencoded({extended:false}));
 
+//Middlewares 
+app.use((req,res,next)=>{
+console.log("Hello from Middleware-1");
+next();
+})
+
+app.use((req,res,next)=>{
+console.log("Hello from Middleware-2");
+next();
+})
 
 const PORT = 4000;
 
