@@ -1,5 +1,3 @@
-Here is the `README.md` file for your REST API project, using the provided code as a reference:
-
 ````markdown
 # REST API - Mockaroo sample data
 
