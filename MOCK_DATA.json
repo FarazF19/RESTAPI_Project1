@@ -7998,5 +7998,37 @@
         "email": "khoweyrr@php.net",
         "gender": "Female",
         "job_title": "Health Coach I"
+    },
+    {
+        "first_name": "Faraz",
+        "last_name": "Farooqi",
+        "email": "faraz.dev@gmail.com",
+        "gender": "Male",
+        "job_title": "Software Dev",
+        "id": 1001
+    },
+    {
+        "first_name": "Faraz",
+        "last_name": "Farooqi",
+        "email": "faraz.dev@gmail.com",
+        "gender": "Male",
+        "job_title": "Software Dev",
+        "id": 1002
+    },
+    {
+        "first_name": "John",
+        "last_name": "Doe",
+        "email": "john@gmail.com",
+        "gender": "Male",
+        "job_title": "Software Tester",
+        "id": 1003
+    },
+    {
+        "first_name": "Jaane",
+        "last_name": "Doe",
+        "email": "john@gmail.com",
+        "gender": "female",
+        "job_title": "Software Tester",
+        "id": 1004
     }
 ]
