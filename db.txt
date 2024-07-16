@@ -1,0 +1,4 @@
+MongoDB Tutorial:
+Schema - Defines Structure of a data
+Schema -> Model
+Model-> Using model we do CRUD operations on our data. 
