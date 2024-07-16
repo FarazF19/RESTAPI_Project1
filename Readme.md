@@ -1,7 +1,7 @@
 ````markdown
-# REST API - Mockaroo sample data
+# REST API Project
 
-This is a simple REST API for managing users, supporting CRUD operations. Responses are in JSON format, and the API follows RESTful principles.
+This project is a simple REST API for managing users, supporting CRUD operations. It utilizes MongoDB as the database and follows RESTful principles, with responses in JSON format. Through this project, I learned how to create a REST API, use MongoDB for database operations, and perform CRUD operations using the REST API. Additionally, I learned to use the MVC pattern and Postman to test the APIs. This project was a stepping stone towards learning Node.js.
 
 ## Endpoints
 
@@ -19,26 +19,11 @@ This is a simple REST API for managing users, supporting CRUD operations. Respon
 
 - **POST /api/users**
 - Creates a new user.
-- **Request Body:**
-  ```json
-  {
-    "name": "New User",
-    "email": "new.user@example.com"
-  }
-  ```
-````
 
 ### Update a User by ID
 
 - **PATCH /api/users/:id**
 - Updates an existing user by their unique ID.
-- **Request Body:**
-  ```json
-  {
-    "name": "Updated User",
-    "email": "updated.user@example.com"
-  }
-  ```
 
 ### Delete a User by ID
 
@@ -61,11 +46,13 @@ This is a simple REST API for managing users, supporting CRUD operations. Respon
 
 1. Clone the repository
    ```bash
-   git clone https://github.com/yourusername/rest-api-project.git
+   git clone https://github.com/FarazF19/RESTAPI_Project1.git
    ```
+````
+
 2. Navigate to the project directory
    ```bash
-   cd rest-api-project
+   cd RESTAPI_Project1
    ```
 3. Install dependencies
    ```bash
@@ -84,44 +71,6 @@ The server will start on `http://localhost:4000`.
 
 Use tools like `curl`, `Postman`, or any REST client to interact with the API endpoints.
 
-## Example Code
-
-```javascript
-const express = require("express");
-const users = require("./MOCK_DATA.json");
-
-const app = express();
-const PORT = 4000;
-
-// Routes
-app.get("/api/users", (req, res) => {
-  return res.json(users);
-});
-
-app
-  .route("/api/users/:id")
-  .get((req, res) => {
-    const id = Number(req.params.id);
-    const user = users.find((user) => user.id == id);
-    return res.json(user);
-  })
-  .patch((req, res) => {
-    // Edit user with ID
-    res.json({ status: "pending" });
-  })
-  .delete((req, res) => {
-    // Delete user with ID
-    res.json({ status: "pending" });
-  });
-
-app.post("/api/users", (req, res) => {
-  // TODO: Create new user
-  return res.send({ status: "pending" });
-});
-
-app.listen(PORT, () => console.log("Server Started!"));
-```
-
 ## Authors
 
 - Faraz
@@ -130,7 +79,10 @@ app.listen(PORT, () => console.log("Server Started!"));
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
+## Acknowledgements
+
+Special thanks to Piyush Gard for his YouTube tutorial series on Node.js which was instrumental in learning the concepts applied in this project. Check out his channel: [Piyush Gard YouTube Channel](https://www.youtube.com/watch?v=ohIAiuHMKMI&list=PLinedj3B30sDby4Al-i13hQJGQoRQDfPo&index=1)
+
 ```
 
-Replace `yourusername` with your actual GitHub username or appropriate details. Save this content in a file named `README.md`.
 ```
