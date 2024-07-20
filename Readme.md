@@ -1,4 +1,4 @@
-````markdown
+
 # REST API Project
 
 This project is a simple REST API for managing users, supporting CRUD operations. It utilizes MongoDB as the database and follows RESTful principles, with responses in JSON format. Through this project, I learned how to create a REST API, use MongoDB for database operations, and perform CRUD operations using the REST API. Additionally, I learned to use the MVC pattern and Postman to test the APIs. This project was a stepping stone towards learning Node.js.
